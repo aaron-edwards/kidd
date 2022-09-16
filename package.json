@@ -12,12 +12,17 @@
     "lint": "eslint --ext .tsx,.ts src"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-use-websockets": "^1.12.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@emotion/babel-plugin": "^11.10.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
+    "@types/babel__core": "^7",
     "@types/jsdom": "^20.0.0",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",

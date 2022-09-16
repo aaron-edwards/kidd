@@ -12,6 +12,7 @@ module.exports = {
     },
     "rules": {
       "react/react-in-jsx-scope": "off",
-      "react/jsx-one-expression-per-line": "off"
+      "react/jsx-one-expression-per-line": "off",
+      "react/no-unknown-property": ['error', { ignore: ['css'] }]
     }
   }

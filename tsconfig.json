@@ -15,7 +15,8 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vitest/globals", "@testing-library/jest-dom"]
+    "jsxImportSource": "@emotion/react",
+    "types": ["vitest/globals", "@testing-library/jest-dom", "@emotion/core"]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
