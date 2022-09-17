@@ -3633,9 +3633,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kiddo@workspace:.":
+"kidd@workspace:.":
   version: 0.0.0-use.local
-  resolution: "kiddo@workspace:."
+  resolution: "kidd@workspace:."
   dependencies:
     "@babel/core": ^7.19.1
     "@emotion/babel-plugin": ^11.10.2
