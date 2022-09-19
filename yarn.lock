@@ -2776,6 +2776,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-glob@npm:^3.2.11":
+  version: 3.2.12
+  resolution: "fast-glob@npm:3.2.12"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: 0b1990f6ce831c7e28c4d505edcdaad8e27e88ab9fa65eedadb730438cfc7cde4910d6c975d6b7b8dc8a73da4773702ebcfcd6e3518e73938bb1383badfe01c2
+  languageName: node
+  linkType: hard
+
 "fast-glob@npm:^3.2.9":
   version: 3.2.11
   resolution: "fast-glob@npm:3.2.11"
@@ -3663,6 +3676,7 @@ __metadata:
     react-use-websockets: ^1.12.1
     typescript: ^4.8.3
     vite: ^3.1.1
+    vite-plugin-fonts: ^0.6.0
     vitest: ^0.23.2
   languageName: unknown
   linkType: soft
@@ -5186,6 +5200,17 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
+  languageName: node
+  linkType: hard
+
+"vite-plugin-fonts@npm:^0.6.0":
+  version: 0.6.0
+  resolution: "vite-plugin-fonts@npm:0.6.0"
+  dependencies:
+    fast-glob: ^3.2.11
+  peerDependencies:
+    vite: ^2.0.0 || ^3.0.0
+  checksum: d850eff20fa9235e06de64dbd468c37fb05fb1fdd148a6a188d4298b91b45650f7d1c8330a41d3553f03223a15c75a2a0ac6403e031b81b249d0928d1ddbb781
   languageName: node
   linkType: hard
 

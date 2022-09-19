@@ -17,7 +17,9 @@ declare module '@emotion/react' {
   export interface Theme {
     color: {
       primary: Palette,
-      secondary: Palette
+      secondary: Palette,
+      success: Palette,
+      error: Palette
     }
   }
 }

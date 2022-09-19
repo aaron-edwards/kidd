@@ -1,17 +1,25 @@
+import { Styled } from '../types/types';
+
+const HeaderStyles: Styled = (t) => ({
+  borderBottomColor: t.color.primary.main,
+  borderBottomStyle: 'solid',
+  borderBottomWidth: 1,
+  fontFamily: 'Equinox Regular',
+  background: t.color.primary.bg2,
+});
+
+const SubtitleStyles: Styled = (t) => ({
+  margin: 0,
+  color: t.color.secondary.main,
+});
+
 export default function Header() {
   return (
-    <header
-      css={(theme) => ({
-        borderBottomColor: theme.color.primary.main,
-        borderBottomStyle: 'solid',
-        borderBottomWidth: 1,
-      })}
-    >
-      <h1 css={() => ({
-        margin: 0,
-      })}
-      >Kerbal Interactive Data Display
-      </h1>
+    <header css={HeaderStyles}>
+      <div css={{ display: 'flex', alignItems: 'baseline', gap: '1em' }}>
+        <h1 css={{ margin: 0 }}>K.I.D.D.</h1>
+        <p css={SubtitleStyles}>Kerbal Interactive Data Displayer</p>
+      </div>
     </header>
   );
 }
