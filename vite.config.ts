@@ -34,5 +34,6 @@ export default defineConfig({
     setupFiles: ['./setupTests.ts'],
     environment: 'jsdom',
     clearMocks: true,
+    snapshotSerializers: ['@emotion/jest/enzyme-serializer']
   }
 })

@@ -15,20 +15,22 @@
     "@emotion/react": "^11.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-use-websockets": "^1.12.1"
+    "react-use-websockets": "^1.12.1",
+    "wouter": "^2.8.0-alpha.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@emotion/babel-plugin": "^11.10.2",
+    "@emotion/jest": "^11.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@types/babel__core": "^7",
+    "@types/babel__core": "^7.1.19",
     "@types/jsdom": "^20.0.0",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.23.1",
     "eslint-config-airbnb": "^19.0.4",
@@ -38,10 +40,10 @@
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jsdom": "^20.0.0",
-    "typescript": "^4.8.3",
-    "vite": "^3.1.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.4",
     "vite-plugin-fonts": "^0.6.0",
-    "vitest": "^0.23.2"
+    "vitest": "^0.23.4"
   },
   "packageManager": "yarn@3.2.2"
 }

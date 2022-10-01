@@ -1,3 +1,3 @@
-import { Interpolation, Theme } from '@emotion/react';
+import { FunctionInterpolation, Theme } from '@emotion/react';
 
-export type Styled = Interpolation<Theme>;
+export type Styled = FunctionInterpolation<Theme>;
