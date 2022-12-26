@@ -14,10 +14,8 @@ function AllTheProviders({ children }: { children: React.ReactElement }) {
 }
 
 describe('<App />', () => {
-  describe('counter', () => {
-    it('should initialise current count as 0', () => {
-      const { getByRole } = render(<App />, { wrapper: AllTheProviders });
-      expect(getByRole('button')).toHaveTextContent('0');
-    });
+  it('should render title', () => {
+    const { getByRole } = render(<App />, { wrapper: AllTheProviders });
+    expect(getByRole('heading', { level: 1 })).toHaveTextContent('K.I.D.D.');
   });
 });
