@@ -1,49 +1,42 @@
-import { useTheme } from '@emotion/react';
+import {
+  Box, Grid, GridItem, Heading, HStack, Text, VStack,
+} from '@chakra-ui/react';
+import { Palette } from '@emotion/react';
 import Header from './components/Header';
+import { SideMenu } from './components/Menu';
+import theme, { colors } from './theme';
 
 function App() {
-  const t = useTheme();
   return (
-    <>
-      <Header />
-      <div css={{
-        display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
-      }}
+    <Grid
+      gridTemplateAreas={`
+    "header header"
+    "nav    main"
+    `}
+      gridTemplateRows="auto 1fr"
+      gridTemplateColumns="300px 1fr"
+      minH="100vh"
+    >
+      <GridItem
+        area="header"
+        bg="primary.bg2"
+        borderBottom="1px solid"
+        borderBottomColor="primary.dark2"
       >
-        <p css={{
-          color: t.color.primary.main,
-          borderBottomColor: t.color.primary.main,
-          borderBottomStyle: 'solid',
-          borderBottomWidth: 1,
-        }}
-        >Primary
-        </p>
-        <p css={{
-          color: t.color.secondary.main,
-          borderBottomColor: t.color.secondary.main,
-          borderBottomStyle: 'solid',
-          borderBottomWidth: 1,
-        }}
-        >Secondary
-        </p>
-        <p css={{
-          color: t.color.success.main,
-          borderBottomColor: t.color.success.main,
-          borderBottomStyle: 'solid',
-          borderBottomWidth: 1,
-        }}
-        >Success
-        </p>
-        <p css={{
-          color: t.color.error.main,
-          borderBottomColor: t.color.error.main,
-          borderBottomStyle: 'solid',
-          borderBottomWidth: 1,
-        }}
-        >Error
-        </p>
-      </div>
-    </>
+        <Header />
+      </GridItem>
+      <GridItem
+        area="nav"
+        bg="primary.bg2"
+        borderRight="1px solid"
+        borderRightColor="primary.dark2"
+      >
+        <SideMenu />
+      </GridItem>
+      <GridItem area="main" padding="1">
+        Main Content
+      </GridItem>
+    </Grid>
   );
 }
 

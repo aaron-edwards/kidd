@@ -1,16 +1,15 @@
-import { Global, ThemeProvider } from '@emotion/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
+
 import App from './App';
 import 'virtual:fonts.css';
-import GlobalStyles from './theme/GlobalStyles';
 import theme from './theme';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <Global styles={GlobalStyles} />
+    <ChakraProvider theme={theme}>
       <App />
-    </ThemeProvider>
+    </ChakraProvider>
   </React.StrictMode>,
 );
