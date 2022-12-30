@@ -1,10 +1,7 @@
-import {
-  Box, Grid, GridItem, Heading, HStack, Text, VStack,
-} from '@chakra-ui/react';
-import { Palette } from '@emotion/react';
-import Header from './components/Header';
-import { SideMenu } from './components/Menu';
-import theme, { colors } from './theme';
+import { Grid, GridItem } from "@chakra-ui/react";
+
+import Header from "./components/Header";
+import { SideMenu } from "./components/Menu";
 
 function App() {
   return (

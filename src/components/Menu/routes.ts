@@ -1,11 +1,11 @@
-import { type RouteGroup } from './types';
+import { type RouteGroup } from "./types";
 
 const routes: RouteGroup[] = [
   {
-    name: 'Planning',
+    name: "Planning",
     routes: [
-      { name: 'Delta V', link: '/planning/deltav' },
-      { name: 'Synchronus Orbits', link: '/planning/synchronus' },
+      { name: "Delta V", link: "/planning/deltav" },
+      { name: "Synchronus Orbits", link: "/planning/synchronus" },
     ],
   },
 ];

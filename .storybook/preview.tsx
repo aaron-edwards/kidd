@@ -7,13 +7,13 @@ export const parameters = {
   controls: {
     matchers: {
       color: /(background|color)$/i,
-      date: /Date$/
-    }
+      date: /Date$/,
+    },
   },
 
   backgrounds: {
-    disable: true
-  }
+    disable: true,
+  },
 };
 
 const withThemeProvider = (Story) => {

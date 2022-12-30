@@ -1,7 +1,10 @@
-import { Palette } from '@emotion/react';
+import { Palette } from "@emotion/react";
 
-export default function createPallette(hue: number, saturation: number = 100): Palette {
-  const createColor = (l:number) => `hsl(${hue}, ${saturation}%, ${l}%)`;
+export default function createPallette(
+  hue: number,
+  saturation: number = 100
+): Palette {
+  const createColor = (l: number) => `hsl(${hue}, ${saturation}%, ${l}%)`;
 
   return {
     main: createColor(50),

@@ -1,17 +1,16 @@
-import {
-  List, ListItem, Heading,
-} from '@chakra-ui/react';
-import RouteLink from './RouteLink';
-import { RouteGroup } from './types';
+import { List, ListItem, Heading } from "@chakra-ui/react";
+
+import RouteLink from "./RouteLink";
+import { RouteGroup } from "./types";
 
 type Props = {
-  routes: RouteGroup[]
+  routes: RouteGroup[];
 };
 
 export default function ManuContent({ routes }: Props) {
   return (
     <List spacing="4" styleType="none">
-      { routes.map((routeGroup) => (
+      {routes.map((routeGroup) => (
         <ListItem key="name">
           <Heading
             paddingLeft="4"
@@ -23,17 +22,14 @@ export default function ManuContent({ routes }: Props) {
             {routeGroup.name}
           </Heading>
           <List>
-            {
-                routeGroup.routes.map((route) => (
-                  <ListItem key={route.name}>
-                    <RouteLink route={route} paddingLeft="8" />
-                  </ListItem>
-                ))
-              }
+            {routeGroup.routes.map((route) => (
+              <ListItem key={route.name}>
+                <RouteLink route={route} paddingLeft="8" />
+              </ListItem>
+            ))}
           </List>
         </ListItem>
       ))}
     </List>
-
   );
 }

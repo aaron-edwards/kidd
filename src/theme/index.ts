@@ -1,10 +1,10 @@
-import { defineStyleConfig, extendBaseTheme } from '@chakra-ui/react';
+import { defineStyleConfig, extendBaseTheme } from "@chakra-ui/react";
 
-import createPallette from './createPalette';
+import createPallette from "./createPalette";
 
 const Heading = defineStyleConfig({
   baseStyle: {
-    fontFamily: 'Equinox Regular',
+    fontFamily: "Equinox Regular",
   },
   variants: {
     default: (props) => ({
@@ -12,8 +12,8 @@ const Heading = defineStyleConfig({
     }),
   },
   defaultProps: {
-    colorScheme: 'primary',
-    variant: 'default',
+    colorScheme: "primary",
+    variant: "default",
   },
 });
 
@@ -33,8 +33,8 @@ const Link = defineStyleConfig({
     }),
   },
   defaultProps: {
-    colorScheme: 'primary',
-    variant: 'default',
+    colorScheme: "primary",
+    variant: "default",
   },
 });
 
@@ -55,18 +55,18 @@ const rawColors = {
   magenta: createPallette(330),
 
   grey: {
-    main: 'hsl(0, 0%, 97%)',
-    light1: 'hsl(0, 0%, 98%)',
-    light2: 'hsl(0, 0%, 99%)',
-    light3: 'hsl(0, 0%, 100%)',
+    main: "hsl(0, 0%, 97%)",
+    light1: "hsl(0, 0%, 98%)",
+    light2: "hsl(0, 0%, 99%)",
+    light3: "hsl(0, 0%, 100%)",
 
-    dark1: 'hsl(0, 0%, 80%)',
-    dark2: 'hsl(0, 0%, 75%)',
-    dark3: 'hsl(0, 0%, 70%)',
+    dark1: "hsl(0, 0%, 80%)",
+    dark2: "hsl(0, 0%, 75%)",
+    dark3: "hsl(0, 0%, 70%)",
 
-    bg1: 'hsl(0, 0%, 10%)',
-    bg2: 'hsl(0, 0%, 5%)',
-    bg3: 'hsl(0, 0%, 2.5%)',
+    bg1: "hsl(0, 0%, 10%)",
+    bg2: "hsl(0, 0%, 5%)",
+    bg3: "hsl(0, 0%, 2.5%)",
   },
 };
 
@@ -84,10 +84,10 @@ const theme = extendBaseTheme({
   colors,
   styles: {
     global: {
-      'html, body': {
-        fontFamily: 'Space Grotesk',
-        background: 'primary.bg3',
-        color: 'primary.main',
+      "html, body": {
+        fontFamily: "Space Grotesk",
+        background: "primary.bg3",
+        color: "primary.main",
       },
     },
   },
