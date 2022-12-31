@@ -1,13 +1,15 @@
 import { type RouteGroup } from "./types";
 
-const routes: RouteGroup[] = [
+const routeGroups: RouteGroup[] = [
   {
     name: "Planning",
     routes: [
-      { name: "Delta V", link: "/planning/deltav" },
-      { name: "Synchronus Orbits", link: "/planning/synchronus" },
+      { name: "Delta V", link: "/deltav" },
+      { name: "Synchronus Orbits", link: "/synchronus-orbits" },
     ],
   },
 ];
 
-export default routes;
+export default routeGroups;
+
+export const routes = routeGroups.flatMap((routeGroup) => routeGroup.routes);

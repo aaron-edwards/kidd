@@ -1,7 +1,10 @@
 import { Grid, GridItem } from "@chakra-ui/react";
+import { Route, Switch } from "wouter";
 
 import Header from "./components/Header";
 import { SideMenu } from "./components/Menu";
+import DeltaVPage from "./pages/deltav";
+import SynchronusOrbitsPage from "./pages/synchronous";
 
 function App() {
   return (
@@ -31,7 +34,10 @@ function App() {
         <SideMenu />
       </GridItem>
       <GridItem area="main" padding="1">
-        Main Content
+        <Switch>
+          <Route path="/deltav" component={DeltaVPage} />
+          <Route path="/synchronus-orbits" component={SynchronusOrbitsPage} />
+        </Switch>
       </GridItem>
     </Grid>
   );

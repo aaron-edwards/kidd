@@ -2,6 +2,11 @@ import { FunctionInterpolation, Theme } from "@emotion/react";
 
 export type Styled = FunctionInterpolation<Theme>;
 
+export type Orbit = {
+  orbits: string;
+  semiMajorAxis: number;
+};
+
 export type Body = {
   name: string;
   radius: number;
@@ -11,6 +16,10 @@ export type Body = {
   rotationPeriod: number;
   atm?: number;
   color: string;
-  url?: string;
   orbit?: Orbit;
+};
+
+type System = {
+  body: Body;
+  satelites: System[];
 };

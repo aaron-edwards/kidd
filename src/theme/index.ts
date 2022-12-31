@@ -17,6 +17,19 @@ const Heading = defineStyleConfig({
   },
 });
 
+const Text = defineStyleConfig({
+  baseStyle: {},
+  variants: {
+    default: (props) => ({
+      color: props.theme.colors[props.colorScheme]?.main,
+    }),
+  },
+  defaultProps: {
+    colorScheme: "primary",
+    variant: "default",
+  },
+});
+
 const Link = defineStyleConfig({
   variants: {
     default: (props) => ({
@@ -91,7 +104,11 @@ const theme = extendBaseTheme({
       },
     },
   },
-  components: { Heading, Link },
+  components: {
+    Heading,
+    Link,
+    Text,
+  },
 });
 
 export default theme;
